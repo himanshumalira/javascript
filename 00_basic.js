@@ -83,11 +83,11 @@
 
 //  check the number is odd even 
 
-let num = 31
-if (num%2 == 0) {
-    console.log('the number is Even')
-} else if(num%2 !== 0){
-    console.log('the number is odd')
-}else {
-    console.log('the number is zero')
-}
+// let num = 31
+// if (num%2 == 0) {
+//     console.log('the number is Even')
+// } else if(num%2 !== 0){
+//     console.log('the number is odd')
+// }else {
+//     console.log('the number is zero')
+// }
