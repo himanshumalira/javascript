@@ -78,3 +78,85 @@ for (let i = 0; i < myArr.length; i++) {
             // console.log(`value is ${num}`);
             num++
         } while (num <= 10);
+
+
+
+      //  For Of Loop
+
+      let arrFor = [1, 2, 3, 4, 5]
+      for (const num of arrFor) {
+         // console.log(num);
+      }
+
+      const greeting = "Himanshu"
+      for (const greet of greeting) {
+         // console.log(greet);
+      }
+
+
+      //  maps 
+      
+      const map = new Map()
+      map.set('In', "India")
+      map.set('Fr', "france")
+      map.set('AUS', "Australia")
+      // console.log(map);
+      for (const [key, value] of map) {
+         // console.log(key, value);
+      }
+
+
+      // For in loops
+      const myObj = {
+         js: "JavaScript",
+         rs: "ruby",
+         py: "python"
+      }
+
+      for (const key in myObj) {
+         // console.log(`${key} shortcut for ${myObj[key]}`);
+            
+         }
+
+         const programming = ["js", "py", "rb", "css"]
+         for (const key in programming) {
+           
+               // console.log(`${key} for ${programming[key]}`);
+            }
+         
+
+
+      //  For each loop
+
+      const myNum = [1, 2, 3, 4, 5]
+
+      // myNum.forEach((item) => {
+      //    console.log(item);
+      // })
+
+      // function print (item){
+      //    console.log(item);
+      // }
+      // myNum.forEach(print)
+      // myNum.forEach((item, index, arr)=> {
+      //    console.log(item, index, arr);
+      // })
+
+      const coding = [
+         {
+            lang: "javascript",
+            file: "js"
+         },
+         {
+            lang: "python",
+            file: "py"
+         },
+         {
+            lang: "ruby",
+            file: "rb"
+         },
+      ]
+
+      coding.forEach((code)=> {
+         console.log(code.lang, code.file);
+      })
