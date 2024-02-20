@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dom K BAre me</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language" style="text-align: center;">
+    <li> JAvaScript</li>
+    </ul>
+</body>
+<script>
+    //  Normal aprouch to create element
+    //  You travers the whole DOM tree in this aprouch
+    function addLanguage (langname){
+        const li = document.createElement("li")
+        li.innerHTML = `${langname}`
+        document.querySelector(".language").appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("ruby")
+//  Optimized aprouch to create element => you can not travers the whole DOM tree 
+    function addoptLang(langName){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(li)
+    }
+    addoptLang("java")
+    addoptLang("python")
+    addoptLang("C++")
+
+
+//    Edit Element
+const secondLang = document.querySelector("li:nth-child(2)")
+// secondLang.innerHTML = "Mojo"
+const newLi = document.createElement("li")
+newLi.textContent = "Mojo"
+secondLang.replaceWith(newLi)
+
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = "<li> Typescript </li>"
+
+
+//  Remove Eement
+const lastLang = document.querySelector("li:last-child")
+lastLang.remove()
+</script>
+</html>

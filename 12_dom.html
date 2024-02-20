@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+    <style>
+        body{
+        background-color: black;
+        }
+        .bg-black{
+        color: white;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">Dom Learning</h1>
+        <h1 id="title1" class="heading">Dom Learning</h1>
+        <h1 id="title2" class="heading">Dom Learning</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+    </div>
+    <script src="./12_dom.js"></script>
+<!-- <script>
+    
+const para = document.querySelectorAll("p")
+para[1].style.color = "red"
+
+//  convert node or html list into Array
+
+const myArr = Array.from(para)
+myArr.map((heading) => {
+    heading.style.backgroundColor = "white"
+    heading.style.color = "black"
+    heading.style.fontSize = "50px"
+    heading.innerHTML = "Jone bnega DOn"
+    
+})
+</script> -->
+</body>
+<!-- <script>
+    const div = document.createElement("div")
+div.className = "main"
+div.id = Math.round(Math.random()* 10 + 1)
+div.setAttribute("title", "generated title")
+div.style.backgroundColor = "black"
+div.style.color = "white"
+const child = document.createTextNode("Tom and JErry")
+div.style.fontSize = "75px"
+div.appendChild(child)
+document.body.appendChild(div)
+</script> -->
+</html>

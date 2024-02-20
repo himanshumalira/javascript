@@ -126,9 +126,9 @@ for (let i = 0; i < myArr.length; i++) {
          
 
 
-      //  For each loop
+      //  For each loop ( For each loop cam not return any value)
 
-      const myNum = [1, 2, 3, 4, 5]
+      // const myNum = [1, 2, 3, 4, 5]
 
       // myNum.forEach((item) => {
       //    console.log(item);
@@ -142,21 +142,43 @@ for (let i = 0; i < myArr.length; i++) {
       //    console.log(item, index, arr);
       // })
 
-      const coding = [
-         {
-            lang: "javascript",
-            file: "js"
-         },
-         {
-            lang: "python",
-            file: "py"
-         },
-         {
-            lang: "ruby",
-            file: "rb"
-         },
-      ]
+      // const coding = [
+      //    {
+      //       lang: "javascript",
+      //       file: "js"
+      //    },
+      //    {
+      //       lang: "python",
+      //       file: "py"
+      //    },
+      //    {
+      //       lang: "ruby",
+      //       file: "rb"
+      //    },
+      // ]
 
-      coding.forEach((code)=> {
-         console.log(code.lang, code.file);
+      // coding.forEach((code)=> {
+      //    console.log(code.lang, code.file);
+      // })
+
+
+      // filter loop
+
+      const val = [1, 2, 3, 4, 5, 6, 7]
+
+      const valu = val.filter( (item) =>{
+         return item > 3
       })
+      // console.log(valu);
+
+
+
+      //  Reduce loop
+
+      const myNums = [1, 2, 3, 4, 5]
+      
+
+     const numb = myNums.reduce( (acc, curVal) => {
+         return acc + curVal
+      }, 0)
+      console.log(numb);
