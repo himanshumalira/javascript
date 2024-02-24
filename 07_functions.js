@@ -15,9 +15,9 @@ function myName(){
 // myName  ( This is the refrence of the function)
 // myName() ( calling the function )
 
-// function addTwoNum (num1, num2){
-//     console.log(num1 + num2);
-// }
+function addTwoNum (num1, num2){
+    console.log(num1 + num2);
+}
 
 // addTwoNum(5, 6) ( this method do not return or store any value this is the simple console of data)
 
@@ -59,7 +59,7 @@ const user = {
 }
 
 function handleObject (anyObject){
-    console.log(`my name is ${anyObject.name} and my age is ${anyObject.age}`);
+    // console.log(`my name is ${anyObject.name} and my age is ${anyObject.age}`);
     return `my name is ${anyObject.name}`
 }
 
@@ -72,7 +72,7 @@ function handleObject (anyObject){
 const myArr = [100, 200, 331]
 
 function array (myAr){
-    console.log(`${myAr[1]}`);
+    // console.log(`${myAr[1]}`);
 }
 // array(myArr)
 
@@ -85,7 +85,7 @@ function one() {
 
     function two(){
         const age = 23
-        console.log(`my name is ${username} and my age is ${age}`);
+        // console.log(`my name is ${username} and my age is ${age}`);
     }
     // two()
 }
@@ -100,7 +100,7 @@ function one() {
 //  Function Hoisting
 
 // addOne(5) => you can execute any function before declearation, but the function is not stored in any variable
-addOne(5)
+// addOne(5)
 function addOne (num){
     return num +1
 }
@@ -109,6 +109,6 @@ function addOne (num){
 const addTwo = function (num){
     return nuum +1
 }
-addTwo(5)
+// addTwo(5)
 
 

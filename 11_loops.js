@@ -100,7 +100,12 @@ for (let i = 0; i < myArr.length; i++) {
       map.set('In', "India")
       map.set('Fr', "france")
       map.set('AUS', "Australia")
+      // map.set('Fr', "france")
       // console.log(map);
+
+
+      
+      //  For of loop
       for (const [key, value] of map) {
          // console.log(key, value);
       }
@@ -181,4 +186,4 @@ for (let i = 0; i < myArr.length; i++) {
      const numb = myNums.reduce( (acc, curVal) => {
          return acc + curVal
       }, 0)
-      console.log(numb);
+      // console.log(numb);

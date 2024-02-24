@@ -52,9 +52,10 @@ myArr.shift()
 // Using Splice method between the range of 1 to 3 and the result of the method is given output index[1] to index[3], in this method all range is included in output
 //  Splice method make changes in Orignal Array 
 //  we got a new array, the splice part is remove from the Array
-// const myn2 = myArr.splice(1, 3)
+// const myArr5 = [1, 2, 3, 4, 5]
+// const myn2 = myArr5.splice(1, 3)
 // console.log(myn2);
-// console.log(myArr);
+// console.log(myArr5);
 
 
 

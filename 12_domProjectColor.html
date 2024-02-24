@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Project</title>
+</head>
+<body style="display: flex;">
+    <h1>Background Changing Application</h1>
+    <div class="color" id="red" style="width: 110px; height: 110px; border: 2px solid black; background-color: red;">Red</div>
+    <div class="color" id="blue" style="width: 110px; height: 110px; border: 2px solid black; background-color: blue;">Blue</div>
+    <div class="color" id="yellow" style="width: 110px; height: 110px; border: 2px solid black; background-color: yellow;">Yellow</div>
+    <div class="color" id="green" style="width: 110px; height: 110px; border: 2px solid black; background-color: green;">Green</div>
+</body>
+<script>
+    const buttons = document.querySelectorAll(".color")
+    const body = document.querySelector("body")
+
+    buttons.forEach( (button) => {
+        button.addEventListener("click", (e)=> {
+            
+            if(e.target.id === "red"){
+                body.style.backgroundColor = e.target.id;
+            }
+            if(e.target.id === "blue"){
+                body.style.backgroundColor = e.target.id;
+            }
+            if(e.target.id === "yellow"){
+                body.style.backgroundColor = e.target.id;
+            }
+            if(e.target.id === "green"){
+                body.style.backgroundColor = e.target.id;
+            }
+        })
+    })
+    
+</script>
+</html>

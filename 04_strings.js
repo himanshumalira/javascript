@@ -1,4 +1,4 @@
-//  In javascript, a string is a sequence of characters enclosed within either single quotes(''), double quotes("") and backticks(``).
+//  In javascript, a string is a sequence of characters enclosed within either single quotes(''), double quotes("") and backticks(`tamplete litral`).
 
 //  Strings are the one of Primitive datatypes in javascript, used to represent the textual data.
 
@@ -6,7 +6,7 @@
 // const age = 23
 
 // console.log(name + age + "value")
-// console.log(`My name is ${name} and my age is ${age}`)
+// console.log(`My name is ${name} and my age is ${age}`) 
 
 
 //  Access the keys and protypes of a string
