@@ -129,3 +129,311 @@
 // }
 
 // console.log(sortedArray( array));
+
+
+
+
+// Qus 06 => forEach ka use krke kisi array me hello word add kro
+// let arr = [1, 2, 3, 4, 5]
+// 
+
+// arr.forEach(function(arr){
+//     console.log(arr + "hello")
+// })
+
+
+
+//  Qus 07 => Array k sare number print kro or unhe chhord do jo ki 2 se bade h 
+
+// let arr = [1, 2, 3, 4, 5]
+
+// arr.forEach(function(arr){
+//            if (arr <= 2) {
+//             console.log(arr);
+//            }
+// })
+
+
+
+
+//  Qus 08 => saare elements jo ki array me h unka sum kro
+
+// let arr = [1, 2, 3, 4, 5]
+// let sum = 0
+// arr.forEach(function(arr){
+//         console.log(sum = sum + arr);
+// })
+
+
+
+//  Qus 09 => array k saare element add kro or agar unme koi string nikal jaye to use skip kro
+
+// let arr = [1, 2, 3, "4", 5,]
+// let sum = 0
+// arr.forEach(function(arr){
+//     if(typeof arr == "number"){
+//             console.log(sum = sum + arr);
+//     }
+// })
+
+
+
+// Qus 10 => Write a js function to check whether an `input` is an array or not.
+
+// [Whenever we create an array it is always given a blueprint or an instance which is Array]
+
+
+//  let array = [1,2,3,4,5,6,7,8]
+// function isArray() {
+//     console.log(Array.isArray(array));
+// }
+// isArray()
+
+// function isArray(){
+//     console.log(array instanceof Array);
+// }
+// isArray()
+
+
+// Qus 11 => Write a js function to clone an array.
+
+// let array = [1,2,3,[4,5],6]
+
+// function cloneArray(){
+//     let cloned = [...array]
+//     return console.log(cloned, array);
+// }
+// cloneArray()
+
+
+
+//  Qus 12 =>  Write the js function to get the first element of an array. passing a parameter 'n' will return the first 'n' element of the array.
+
+// function firstElement(inp, get = 1){
+//         let cloned = []
+//         for (let i = 0; i< get; i++) {
+//                cloned.push(inp[i])
+//         }
+//         return cloned
+// }
+
+// console.log(firstElement([1, 2, 3], 2));
+
+
+
+//  Qus 13 => Write a simple js function to join all elements of the following array into a string .
+//  let color = ["red", "green", "blue"]
+
+//  function joinArray(){
+//         return color.join("+/,")
+
+// }
+
+// console.log(joinArray())
+
+
+// Qus 14 => Possible ways to create an object.
+
+// 1- Object literal => let a = {}
+
+// 2- By using Object.create Mathod => let obj = Object.create(null)
+
+// 3- by new keyword => 
+//  function obj (){
+//                   this.name = "himanshu"
+
+//                     }
+//                   const object = new Object()
+//                   console.log(object);
+
+// 4- By class constructor => 
+//                      class Constructor{
+//                               constructor(){
+//                                   }
+//                               a = 12
+//                                   }
+//                     const result = new Constructor()
+
+
+
+
+// Qus 15 => What is higher order function?
+//            hoc functions, contains a function as a parameter or return a function .
+//  Function k andar function hote h
+
+// function hoc (inp){
+//     return function(inp2){
+//         return inp + inp2
+//     }
+// }
+
+// console.log(hoc(10)(50));
+
+
+
+//  Qus 16 => What is map ?
+//  Jab apko array k har member par koi operation perform krna ho or har member par perform krne k baad usey ek naye array me dalna h tab ham map ka use krte h.
+//  it is compulsory to return its function's defination 
+//  you will store its return value is a variable 
+
+//  [1, 2, 3, 4] x 2 array 
+//  [2, 4,6,8]  new array
+
+// let array = [1, 2, 3, 4];
+// let newArray = array.map(function(val){
+//     return val * 2
+// })
+// console.log(newArray);
+
+
+// Qus 17 => Ek array se ek naya array bnao jisme agar word ki length 5 h to p tag me daalo nhi to span tag me daalo.
+
+// let array = ["apple", "banana", "seb", "kivi"]
+
+// const newArray = array.map(function(val){
+//             if (val.length >= 5){
+//                 return `<p>${val}</p>`
+//             }else {
+//                 return `<span>${val}</span>`
+//             }
+// })
+
+// console.log(newArray);
+
+
+
+// Qus 18 => Ek array of object h jisme kaafi data h usse ek array bnao jisme sirf name ho
+
+// let array = [{
+//     name: "himanshu",
+//     age: 23
+// }, {
+//     name: "kivi",
+//     age: 24
+// }, {
+//     name: "apple",
+//     age: 25
+// }]
+
+// const result = array.map(function (val){
+//             return val.name
+// })
+// console.log(result);
+
+
+
+//  Qus 19 => Why are we making IIFE ??
+//  To create Private variables.
+
+// Qus 20 => How do you protect these variable??
+//  var a = 12;
+
+//  (function() {
+//      var a = 12;
+//      console.log(a);
+//     })();
+//     console.log(a);
+
+
+// Qus 21 => How to access and change the value of a variable which is declared in the private variables .
+
+// let change = (function (){
+//     let a = 12;
+//     return {
+//         getter: function (){
+//             console.log(a);
+//         },
+//         setter: function (val){
+//             a = val;
+//         }
+//     }
+// })();
+// change.setter(580)
+// change.getter();
+
+
+
+// Qus 22 => Print numbers from 1 - 10.
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+
+
+// Qus 23 => Print the odd numbers less then 100.
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 2!= 0) {
+//         console.log(i);
+//     }
+// }
+
+
+
+// Qus 24 => Print the multiplication table of 7.
+
+// for (let i = 1; i <= 10; i++){
+//     console.log(`${i} * 7 = ${i*7}`);
+// }
+
+
+//  Qus 25 => Print all the multiplication table with numbers of 1 to 10.
+
+
+// for (let i = 1; i <= 10; i++){
+//     for (j = 1; j<= 10; j++){
+//         console.log(`${i} * ${j} = ${i*j}`);
+//     }
+// }
+
+
+
+// Qus 26 => Calculate the sum of numbers from 1 to 10.
+
+
+// let sum = 0;
+// for (let i = 1; i <= 10; i++) {
+//     sum = sum + i;
+    
+// }
+// console.log(sum);
+
+
+
+// Qus 27 => Calculate 10! .
+// let factorial = 1
+// for (let i = 1; i <= 10; i++) {
+//         factorial = factorial * i
+// }
+
+// console.log(factorial);
+
+//  Qus 28 => Calculate the sum of even numbers greater than 10 and less than 30
+
+
+// let sum = 0;
+// for(let i = 11; i <= 30; i++) {
+//     if(i % 2 == 0){
+//         sum = sum + i
+//         console.log(i);
+//     }
+//     console.log(sum);
+// }
+
+
+
+//  Qus 29 => Create a function that will convert from celsius to fahrenheit.
+//   function convert (celsius) {
+//     return `The value of F is ${celsius * 1.8 + 32}`
+//   }
+//   console.log(convert(39));
+
+
+
+// Qus 30 => calculate the sum of numbers in array of numbers.
+
+// let array = [1, 2, 3, 4, 5, 5]
+// let sum = 0
+// array.forEach(function(val){
+//     sum = sum + val
+// })
+// console.log(sum);
